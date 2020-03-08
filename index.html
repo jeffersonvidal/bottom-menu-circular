@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Menu Circular</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+
+
+    <nav>
+        <div class="container">
+            <div class="skew"></div>
+            <div class="skew"></div>
+            <div class="skew"></div>
+            <div class="skew"></div>
+            <div class="skew"></div>
+            <p><i class="fa fa-envelope-open"></i></p>
+            <p><i class="fa fa-address-card-o"></i></p>
+            <p><i class="fa fa-university"></i></p>
+            <p><i class="fa fa-comments"></i></p>
+            <p><i class="fa fa-cogs"></i></p>
+        </div>
+    </nav>
+
+    <div class="burger">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+
+            $("nav .skew").each(function(i){
+                $("nav .skew").eq(i).css({
+                    transform: "rotate("+ i * 33 +"deg)"
+                });
+            });
+
+            $('.burger').on('click', function(){
+                $('nav').toggleClass('showing');
+            });
+        });
+    </script>
+</body>
+</html>
