@@ -60,3 +60,7 @@
 ![Screen1](https://github.com/jeffersonvidal/bottom-menu-circular/blob/master/screenshots/screen1.PNG?raw=true)
 
 ![Screen2](https://github.com/jeffersonvidal/bottom-menu-circular/blob/master/screenshots/screen2.PNG?raw=true)
+
+---
+
+Made with ♥ by [Jefferson Vidal](https://github.com/jeffersonvidal)
